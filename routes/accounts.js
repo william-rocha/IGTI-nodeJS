@@ -44,4 +44,15 @@ router.get("/:id", async (req, res) => {
     }
 })
 
+router.delete("/:id", async (req, res) => {
+    try {
+        let data = JSON.parse(await readFile(global.fileName))
+        data.accounts = data.accounts.filter(account => account.id !== parseInt(req.params.id))
+        await writeFile(global.fileName, JSON.stringify(data, null, 2))
+        res.end()    
+    } catch (error) {
+        
+    }
+})
+
 export default router
