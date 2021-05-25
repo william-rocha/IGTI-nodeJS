@@ -10,16 +10,27 @@ router.post("/", async (req, res) => {
     try {
 
         let account = req.body;
-        const data = JSON.parse(await readFile("accounts.json"));
+        const data = JSON.parse(await readFile(global.fileName));
         account = {id: data.nextId++, ...account}
         data.accounts.push(account);
         // data, null, 2: para manter o json formatado
         // mas para o arquivo ficar menor o ideal e mante-lo não formatado
-        await writeFile("accounts.json", JSON.stringify(data, null, 2))
+        await writeFile(global.fileName, JSON.stringify(data, null, 2))
         // res.end();
         res.send(account)
     } catch(err) {
         res.status(400).send({error: err.message});
+    }
+})
+
+router.get("/", async (req, res) => {
+    try {
+        // aqui sempre de ser let porque estamos atribuindo outro obj
+        let data = JSON.parse(await readFile(global.fileName))
+        delete data.nextId
+        res.send(data)
+    } catch (error) {
+        res.status(400).send({error: err.message}); 
     }
 })
 

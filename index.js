@@ -4,6 +4,9 @@ import { promises as fs } from "fs"
 
 const {readFile, writeFile} = fs
 
+// var global do node para evitar ficar reescrevendo
+global.fileName = "accounts.json"
+
 const app = express()
 app.use(express.json())
 
@@ -19,7 +22,7 @@ app.listen(3000, async () => {
             nextId: 1, 
             accounts: []
         }
-        writeFile("accounts.json", JSON.stringify(initialJson)).then(() => {
+        writeFile(global.fileName, JSON.stringify(initialJson)).then(() => {
             console.log("Api started and file created!");
         }).catch(err => {
             console.log(err);
