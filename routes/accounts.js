@@ -34,4 +34,14 @@ router.get("/", async (req, res) => {
     }
 })
 
+router.get("/:id", async (req, res) => {
+    try {
+        let data = JSON.parse(await readFile(global.fileName))
+        const account = data.accounts.find(account => account.id === parseInt(req.params.id))
+        res.send(account)
+    } catch (error) {
+        res.status(400).send({error: err.message}); 
+    }
+})
+
 export default router
