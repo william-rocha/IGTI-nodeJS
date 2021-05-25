@@ -1,1 +1,40 @@
-{"nextId":1,"accounts":[]}
+{
+  "nextId": 8,
+  "accounts": [
+    {
+      "name": "Guilherme",
+      "balance": 200,
+      "id": 1
+    },
+    {
+      "name": "Guilherme",
+      "balance": 200,
+      "id": 2
+    },
+    {
+      "name": "Guilherme",
+      "balance": 200,
+      "id": 3
+    },
+    {
+      "id": 4,
+      "name": "Guilherme",
+      "balance": 200
+    },
+    {
+      "id": 5,
+      "name": "Guilherme",
+      "balance": 200
+    },
+    {
+      "id": 6,
+      "name": "Guilherme",
+      "balance": 200
+    },
+    {
+      "id": 7,
+      "name": "Guilherme",
+      "balance": 200
+    }
+  ]
+}
