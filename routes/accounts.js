@@ -19,7 +19,7 @@ router.post("/", async (req, res) => {
         // res.end();
         res.send(account)
     } catch(err) {
-        res.status(400).send({error: err.message});
+        next(err)
     }
 })
 
@@ -30,7 +30,7 @@ router.get("/", async (req, res) => {
         delete data.nextId
         res.send(data)
     } catch (error) {
-        res.status(400).send({error: err.message}); 
+        next(err)
     }
 })
 
@@ -40,7 +40,7 @@ router.get("/:id", async (req, res) => {
         const account = data.accounts.find(account => account.id === parseInt(req.params.id))
         res.send(account)
     } catch (error) {
-        res.status(400).send({error: err.message}); 
+        next(err)
     }
 })
 
@@ -55,7 +55,7 @@ router.delete("/:id", async (req, res) => {
     }
 })  
 
-router.put("/", async (req, res) => {
+router.put("/", async (req, res, next) => {
     try {
         const account = req.body;
 
@@ -65,11 +65,12 @@ router.put("/", async (req, res) => {
         await writeFile(global.fileName, JSON.stringify(data))
         res.send(account)
     } catch (err) {
-        res.status(400).send({error: err.message}); 
+        next(err)
     }
 })
 
-router.patch("/updateBalance", async (req, res) => {
+// se estas funções não tivessem tryCach não precisaria do next porque iria para o proximo 
+router.patch("/updateBalance", async (req, res, next) => {
     try {
         const account = req.body;
 
@@ -80,8 +81,13 @@ router.patch("/updateBalance", async (req, res) => {
         await writeFile(global.fileName, JSON.stringify(data))
         res.send(data.accounts[index])
     } catch (err) {
-        res.status(400).send({error: err.message}); 
+        next(err)
     }
 })
+
+router.use((err,req, res, next) => {
+    console.log(err);
+    res.status(400).send({error: err.message})
+} )
 
 export default router
