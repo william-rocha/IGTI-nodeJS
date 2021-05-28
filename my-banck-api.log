@@ -1,0 +1,6 @@
+2021-05-28T02:35:38.554Z [my-bank-api] info: Api started!
+2021-05-28T02:35:52.551Z [my-bank-api] info: GET /account
+2021-05-28T02:36:25.759Z [my-bank-api] info: GET /account/:id
+2021-05-28T02:36:44.709Z [my-bank-api] info: DELETE /account/:id - 1
+2021-05-28T02:37:04.535Z [my-bank-api] info: POST /account - {"id":11,"name":"Guilherme","balance":200}
+2021-05-28T02:37:15.445Z [my-bank-api] info: PUT /account - {"id":4,"name":"Jose Chaves","balance":200}
