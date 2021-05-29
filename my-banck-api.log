@@ -4,3 +4,70 @@
 2021-05-28T02:36:44.709Z [my-bank-api] info: DELETE /account/:id - 1
 2021-05-28T02:37:04.535Z [my-bank-api] info: POST /account - {"id":11,"name":"Guilherme","balance":200}
 2021-05-28T02:37:15.445Z [my-bank-api] info: PUT /account - {"id":4,"name":"Jose Chaves","balance":200}
+2021-05-28T23:35:22.213Z [my-bank-api] info: Api started!
+2021-05-28T23:35:53.880Z [my-bank-api] info: Api started!
+2021-05-28T23:36:36.621Z [my-bank-api] error: POST /account Name e Balance são obrigatórios
+2021-05-28T23:36:45.113Z [my-bank-api] info: POST /account - {"id":12,"name":"Guilherme","balance":200}
+2021-05-28T23:37:36.795Z [my-bank-api] info: Api started!
+2021-05-28T23:39:02.974Z [my-bank-api] info: Api started!
+2021-05-28T23:40:34.843Z [my-bank-api] info: Api started!
+2021-05-28T23:41:05.769Z [my-bank-api] info: Api started!
+2021-05-28T23:41:10.731Z [my-bank-api] info: Api started!
+2021-05-28T23:41:14.624Z [my-bank-api] info: Api started!
+2021-05-28T23:41:16.547Z [my-bank-api] info: Api started!
+2021-05-28T23:41:19.177Z [my-bank-api] info: Api started!
+2021-05-28T23:41:30.219Z [my-bank-api] info: Api started!
+2021-05-28T23:42:05.206Z [my-bank-api] info: POST /account - {"id":13,"name":"Guilherme","balance":200}
+2021-05-28T23:42:14.642Z [my-bank-api] info: Api started!
+2021-05-28T23:44:37.092Z [my-bank-api] info: Api started!
+2021-05-28T23:44:40.572Z [my-bank-api] info: Api started!
+2021-05-28T23:45:11.803Z [my-bank-api] info: Api started!
+2021-05-28T23:45:15.851Z [my-bank-api] info: Api started!
+2021-05-28T23:45:20.277Z [my-bank-api] info: Api started!
+2021-05-28T23:45:23.589Z [my-bank-api] info: Api started!
+2021-05-28T23:45:36.657Z [my-bank-api] info: Api started!
+2021-05-28T23:46:00.070Z [my-bank-api] info: Api started!
+2021-05-28T23:46:13.320Z [my-bank-api] info: Api started!
+2021-05-28T23:46:16.388Z [my-bank-api] info: Api started!
+2021-05-28T23:46:23.516Z [my-bank-api] info: Api started!
+2021-05-28T23:46:27.151Z [my-bank-api] info: Api started!
+2021-05-28T23:47:19.528Z [my-bank-api] info: Api started!
+2021-05-28T23:47:29.132Z [my-bank-api] error: PUT /account Registro não encontrado.
+2021-05-28T23:48:25.901Z [my-bank-api] info: Api started!
+2021-05-28T23:48:50.743Z [my-bank-api] error: PUT /account Name e Balance são obrigatórios
+2021-05-28T23:49:51.332Z [my-bank-api] info: Api started!
+2021-05-28T23:49:54.720Z [my-bank-api] info: Api started!
+2021-05-28T23:50:29.540Z [my-bank-api] info: PUT /account - {"id":4,"name":"Jose alves","balance":200}
+2021-05-28T23:50:45.261Z [my-bank-api] error: PUT /account Name e Balance são obrigatórios
+2021-05-28T23:51:37.850Z [my-bank-api] info: Api started!
+2021-05-28T23:51:52.643Z [my-bank-api] error: PATCH /account Name e Balance são obrigatórios
+2021-05-28T23:52:39.315Z [my-bank-api] info: Api started!
+2021-05-28T23:52:45.706Z [my-bank-api] error: PATCH /account account is not defined
+2021-05-28T23:53:24.749Z [my-bank-api] error: PATCH /account account is not defined
+2021-05-28T23:53:39.527Z [my-bank-api] error: PATCH /account account is not defined
+2021-05-28T23:53:58.826Z [my-bank-api] info: Api started!
+2021-05-28T23:54:02.190Z [my-bank-api] error: PATCH /account account is not defined
+2021-05-28T23:54:41.660Z [my-bank-api] info: Api started!
+2021-05-28T23:55:23.977Z [my-bank-api] error: PATCH /account account is not defined
+2021-05-28T23:56:28.464Z [my-bank-api] error: PATCH /account account is not defined
+2021-05-28T23:57:25.666Z [my-bank-api] info: Api started!
+2021-05-28T23:57:28.629Z [my-bank-api] error: PATCH /account account is not defined
+2021-05-28T23:57:47.665Z [my-bank-api] info: Api started!
+2021-05-28T23:57:49.925Z [my-bank-api] error: PATCH /account account is not defined
+2021-05-28T23:58:18.903Z [my-bank-api] error: PATCH /account account is not defined
+2021-05-28T23:59:08.388Z [my-bank-api] info: Api started!
+2021-05-28T23:59:10.832Z [my-bank-api] error: PATCH /account account is not defined
+2021-05-28T23:59:53.864Z [my-bank-api] error: PATCH /account account is not defined
+2021-05-29T00:01:14.117Z [my-bank-api] info: Api started!
+2021-05-29T00:01:17.156Z [my-bank-api] error: PATCH /account Registro não encontrado.
+2021-05-29T00:01:22.216Z [my-bank-api] error: PATCH /account Registro não encontrado.
+2021-05-29T00:01:30.467Z [my-bank-api] info: GET /account
+2021-05-29T00:01:41.388Z [my-bank-api] info: PATCH /account - {"id":5,"balance":300}
+2021-05-29T00:02:15.595Z [my-bank-api] info: Api started!
+2021-05-29T00:03:02.293Z [my-bank-api] info: Api started!
+2021-05-29T00:03:18.130Z [my-bank-api] info: Api started!
+2021-05-29T00:03:29.722Z [my-bank-api] info: Api started!
+2021-05-29T00:03:52.320Z [my-bank-api] info: Api started!
+2021-05-29T00:04:44.807Z [my-bank-api] info: Api started!
+2021-05-29T00:04:46.710Z [my-bank-api] info: Api started!
+2021-05-29T00:05:02.484Z [my-bank-api] info: Api started!
