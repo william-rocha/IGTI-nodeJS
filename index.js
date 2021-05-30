@@ -1,5 +1,5 @@
 import express from "express"
-import accountRouter from "./routes/accounts.js"
+import accountRouter from "./routes/account.router.js"
 import { promises as fs } from "fs"
 import winston from "winston"
 import cors from "cors"

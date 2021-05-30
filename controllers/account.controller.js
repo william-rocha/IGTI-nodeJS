@@ -1,10 +1,8 @@
-import express from "express";
+// import express from "express"
 import { promises as fs } from "fs";
-
 const { readFile, writeFile } = fs
-const router = express.Router()
 
-router.post("/", async (req, res, next) => {
+async function createAccount(req, res, next) {
     try {
 
         let account = req.body;
@@ -22,10 +20,9 @@ router.post("/", async (req, res, next) => {
     } catch (err) {
         next(err)
     }
-})
-// podemos liberar o cors individualmente
-// router.get("/", cors(), async (req, res, next) => {
-router.get("/", async (req, res, next) => {
+}
+
+async function getAccounts(req, res, next) {
     try {
         // aqui sempre de ser let porque estamos atribuindo outro obj
         let data = JSON.parse(await readFile(global.fileName))
@@ -35,9 +32,9 @@ router.get("/", async (req, res, next) => {
     } catch (error) {
         next(err)
     }
-})
+}
 
-router.get("/:id", async (req, res, next) => {
+async function getAccount(req, res, next) {
     try {
         let data = JSON.parse(await readFile(global.fileName))
         const account = data.accounts.find(account => account.id === parseInt(req.params.id))
@@ -46,9 +43,9 @@ router.get("/:id", async (req, res, next) => {
     } catch (error) {
         next(err)
     }
-})
+}
 
-router.delete("/:id", async (req, res, next) => {
+async function deleteAccount(req, res, next) {
     try {
         let data = JSON.parse(await readFile(global.fileName))
         data.accounts = data.accounts.filter(account => account.id !== parseInt(req.params.id))
@@ -58,9 +55,9 @@ router.delete("/:id", async (req, res, next) => {
     } catch (error) {
         next(err)
     }
-})
+}
 
-router.put("/", async (req, res, next) => {
+async function updateAccount(req, res, next) {
     try {
         const account = req.body;
         if (!account.id || !account.name || account.balance == null) {
@@ -80,10 +77,9 @@ router.put("/", async (req, res, next) => {
     } catch (err) {
         next(err)
     }
-})
+}
 
-// se estas funções não tivessem tryCach não precisaria do next porque iria para o proximo 
-router.patch("/updateBalance", async (req, res, next) => {
+async function updateBalance(req, res, next) {
     try {
         const account = req.body;
 
@@ -103,11 +99,13 @@ router.patch("/updateBalance", async (req, res, next) => {
     } catch (err) {
         next(err)
     }
-})
+}
 
-router.use((err, req, res, next) => {
-    logger.error(`${req.method} ${req.baseUrl} ${err.message}`);
-    res.status(400).send({ error: err.message })
-})
-
-export default router
+export default {
+    createAccount,
+    getAccounts,
+    getAccount,
+    deleteAccount,
+    updateAccount,
+    updateBalance,
+}
