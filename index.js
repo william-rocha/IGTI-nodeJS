@@ -3,6 +3,8 @@ import accountRouter from "./routes/accounts.js"
 import { promises as fs } from "fs"
 import winston from "winston"
 import cors from "cors"
+import swaggerUi from "swagger-ui-express"
+import { swaggerDocument } from "./doc.js"
 
 const { readFile, writeFile } = fs
 
@@ -30,6 +32,7 @@ app.use(express.json())
 // desta forma libera todos os endpoints
 app.use(cors())
 app.use(express.static("public"))
+app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 app.use("/account", accountRouter)
 
 app.listen(3000, async () => {
