@@ -270,3 +270,87 @@
 2021-05-31T03:40:19.995Z [my-bank-api] info: GET /account
 2021-05-31T03:40:29.858Z [my-bank-api] info: PUT /account - {"id":14,"name":"Jose alves","balance":20}
 2021-05-31T03:40:37.012Z [my-bank-api] info: GET /account
+2021-05-31T22:30:01.111Z [my-bank-api] info: Api started!
+2021-05-31T22:30:20.125Z [my-bank-api] info: GET /account
+2021-05-31T22:32:17.576Z [my-bank-api] info: Api started!
+2021-05-31T22:32:41.837Z [my-bank-api] info: Api started!
+2021-05-31T22:33:10.646Z [my-bank-api] info: Api started!
+2021-05-31T22:33:46.675Z [my-bank-api] info: Api started!
+2021-05-31T22:33:51.671Z [my-bank-api] info: GET /account
+2021-05-31T22:34:05.287Z [my-bank-api] info: Api started!
+2021-05-31T22:34:14.614Z [my-bank-api] info: Api started!
+2021-05-31T22:34:17.801Z [my-bank-api] info: Api started!
+2021-05-31T22:34:20.422Z [my-bank-api] info: Api started!
+2021-05-31T22:34:23.426Z [my-bank-api] info: Api started!
+2021-05-31T22:34:34.839Z [my-bank-api] info: Api started!
+2021-05-31T22:35:02.809Z [my-bank-api] info: Api started!
+2021-05-31T22:35:08.931Z [my-bank-api] info: Api started!
+2021-05-31T22:36:08.062Z [my-bank-api] info: Api started!
+2021-05-31T22:36:29.671Z [my-bank-api] info: Api started!
+2021-05-31T22:37:22.574Z [my-bank-api] info: Api started!
+2021-05-31T22:38:30.604Z [my-bank-api] info: Api started!
+2021-05-31T22:38:41.548Z [my-bank-api] info: Api started!
+2021-05-31T22:39:46.492Z [my-bank-api] info: Api started!
+2021-05-31T22:40:01.546Z [my-bank-api] info: Api started!
+2021-05-31T22:40:17.225Z [my-bank-api] info: Api started!
+2021-05-31T22:40:21.230Z [my-bank-api] info: Api started!
+2021-05-31T22:40:24.615Z [my-bank-api] info: Api started!
+2021-05-31T22:40:35.060Z [my-bank-api] info: Api started!
+2021-05-31T22:40:42.684Z [my-bank-api] info: Api started!
+2021-05-31T22:40:49.288Z [my-bank-api] info: Api started!
+2021-05-31T22:41:01.279Z [my-bank-api] info: Api started!
+2021-05-31T22:41:03.066Z [my-bank-api] info: Api started!
+2021-05-31T22:41:28.967Z [my-bank-api] info: Api started!
+2021-05-31T22:42:12.030Z [my-bank-api] info: Api started!
+2021-05-31T22:42:25.858Z [my-bank-api] info: Api started!
+2021-05-31T22:42:46.085Z [my-bank-api] info: Api started!
+2021-05-31T22:42:58.456Z [my-bank-api] info: Api started!
+2021-05-31T22:43:02.659Z [my-bank-api] info: Api started!
+2021-05-31T22:43:19.913Z [my-bank-api] info: Api started!
+2021-05-31T22:43:23.516Z [my-bank-api] info: Api started!
+2021-05-31T23:07:56.406Z [my-bank-api] info: Api started!
+2021-05-31T23:08:29.267Z [my-bank-api] info: Api started!
+2021-05-31T23:09:28.594Z [my-bank-api] info: Api started!
+2021-05-31T23:09:37.749Z [my-bank-api] info: Api started!
+2021-05-31T23:10:01.671Z [my-bank-api] info: Api started!
+2021-05-31T23:10:04.708Z [my-bank-api] info: Api started!
+2021-05-31T23:10:17.093Z [my-bank-api] info: Api started!
+2021-05-31T23:10:57.571Z [my-bank-api] info: Api started!
+2021-05-31T23:11:24.797Z [my-bank-api] info: Api started!
+2021-05-31T23:11:30.208Z [my-bank-api] info: Api started!
+2021-05-31T23:11:38.057Z [my-bank-api] info: Api started!
+2021-05-31T23:13:37.869Z [my-bank-api] info: Api started!
+2021-05-31T23:13:46.914Z [my-bank-api] info: Api started!
+2021-05-31T23:13:49.444Z [my-bank-api] info: Api started!
+2021-05-31T23:13:53.238Z [my-bank-api] info: Api started!
+2021-05-31T23:22:35.192Z [my-bank-api] info: Api started!
+2021-05-31T23:23:13.745Z [my-bank-api] info: Api started!
+2021-05-31T23:23:35.843Z [my-bank-api] info: GET /account
+2021-05-31T23:23:50.864Z [my-bank-api] info: GET /account
+2021-05-31T23:24:01.838Z [my-bank-api] info: GET /account/:id
+2021-05-31T23:24:22.817Z [my-bank-api] info: GET /account
+2021-05-31T23:25:25.914Z [my-bank-api] info: Api started!
+2021-05-31T23:26:12.653Z [my-bank-api] info: GET /account
+2021-05-31T23:26:23.431Z [my-bank-api] info: GET /account/:id
+2021-05-31T23:57:55.136Z [my-bank-api] info: GET /account
+2021-05-31T23:58:05.555Z [my-bank-api] error: DELETE /account accounts is not defined
+2021-05-31T23:59:44.888Z [my-bank-api] info: Api started!
+2021-06-01T00:00:15.696Z [my-bank-api] info: Api started!
+2021-06-01T00:00:19.665Z [my-bank-api] info: DELETE /account/:id - 14
+2021-06-01T00:00:22.843Z [my-bank-api] info: GET /account
+2021-06-01T00:00:28.039Z [my-bank-api] error: POST /account AccountReposity is not defined
+2021-06-01T00:01:44.283Z [my-bank-api] info: Api started!
+2021-06-01T00:01:47.113Z [my-bank-api] error: POST /account AccountReposity is not defined
+2021-06-01T00:02:33.273Z [my-bank-api] info: Api started!
+2021-06-01T00:02:41.439Z [my-bank-api] info: Api started!
+2021-06-01T00:02:44.729Z [my-bank-api] info: POST /account - {"id":21,"name":"Guilherme","balance":200}
+2021-06-01T00:02:47.136Z [my-bank-api] info: POST /account - {"id":22,"name":"Guilherme","balance":200}
+2021-06-01T00:02:57.448Z [my-bank-api] error: PUT /account Registro não encontrado.
+2021-06-01T00:03:04.153Z [my-bank-api] error: PUT /account Registro não encontrado.
+2021-06-01T00:03:08.811Z [my-bank-api] info: GET /account
+2021-06-01T00:03:26.619Z [my-bank-api] info: PUT /account - {"id":15,"name":"Jose alves","balance":20}
+2021-06-01T00:03:34.835Z [my-bank-api] error: PATCH /account Registro não encontrado.
+2021-06-01T00:03:42.101Z [my-bank-api] info: PATCH /account - {"id":15,"balance":301}
+2021-06-01T00:05:14.675Z [my-bank-api] info: Api started!
+2021-06-01T00:05:35.924Z [my-bank-api] info: DELETE /account/:id - 15
+2021-06-01T00:05:40.822Z [my-bank-api] info: GET /account
